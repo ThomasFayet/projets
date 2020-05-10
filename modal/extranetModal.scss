@@ -1,0 +1,182 @@
+.tv-extranet {
+	#tv-modal{
+        z-index:99999;
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        height:100vh;
+        width:100vw;
+        background-color:rgba(0,0,0,0.8);
+        cursor:pointer;
+                                
+        .tv-modal {
+                         
+            &__container{
+                cursor:default;
+                overflow-x:hidden;
+                overflow-y: auto;
+                z-index: 1;
+                position:absolute;
+                width:55%;
+                //height:auto;
+                max-height: 80%;
+                border:10px solid #b09063;
+                background-color:white;
+                //padding:60px 110px 60px 110px;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%);
+
+                @media all and (max-width:$breakPoint320){
+                    overflow-x:auto;
+                }
+
+                .tv-modal__close{
+                	position:absolute;
+                    overflow:hidden;
+                    user-select: none;
+                	top:0px;
+                    cursor:pointer;
+                	color:white;
+                	width:50px;
+                	height:50px;
+                	background-color:#b09063;
+                	right:0px;
+                	@media all and (max-width:$breakPoint320){
+                    	
+                	}
+                	img{
+                		padding:14px 7px 15px 15px ;
+                	}
+            	}	
+
+                .tv-modal-header{
+                	text-align:center;
+                    margin-bottom:50px;
+                    margin-top:60px;
+
+                	h3{
+                		text-transform: initial;
+                		letter-spacing: 3px;
+                		font-size: 25px;	
+                	}
+                }
+
+                .tv-modal-content{
+                    margin-left:110px;
+                    margin-right:110px;
+
+                    @media all and (max-width:$breakPoint1024){
+                        margin-left:70px;
+                    }
+
+                    @media all and (max-width:$breakPoint320){
+                        margin-left:10px;
+                    }
+                    
+                
+                }
+            }
+        }
+    }
+    .tv-modal-content-field{
+        margin-top:30px;
+
+        p{
+            color:#A9A9A9;
+            font:17px $fontMedium;
+        }
+
+        @media all and (max-width:$breakPoint320)and(min-width:767px){
+            margin-left:20px;
+        }
+
+
+        .tv-contactForm--shortItem{
+            width:515px;
+            border:1px solid #A9A9A9;
+
+            @media all and (max-width:$breakPoint1024){
+                width:380px;
+            }
+            @media all and (max-width:$breakPoint320)and(min-width:767px){
+                width:300px;
+            }
+            @media all and (max-width:767px){
+                width:180px;
+                font-size:14px;
+            }
+        }
+
+        .tv-contactForm-textarea{
+            border:1px solid #A9A9A9;
+            resize:none;
+            width:515px;
+            height:100px;
+
+            @media all and (max-width:$breakPoint1024){
+                width:380px;
+            }
+
+            @media all and (max-width:$breakPoint320)and(min-width:767px){
+                width:300px;
+            }
+            @media all and (max-width:767px){
+                width:180px;
+                font-size:14px;
+            }
+        }
+
+        .tv-modal-upload{
+            border: 2px dashed #b09063;
+            border-radius: 10px;
+            text-align: center;
+            padding-top:50px;
+            height:150px;
+
+            @media all and (max-width:$breakPoint1024){
+                width:420px;
+            }
+
+            @media all and (max-width:$breakPoint320)and(min-width: 767px){
+                width:300px;
+            }
+
+            @media all and (max-width:767px){
+                width:180px;
+            }
+
+            .label-file {
+                cursor:pointer;
+                color:#b09063;
+            }
+
+            .tv-modal-add-file{
+                display:none;
+            }
+        }
+
+        .tv-contactForm-success{
+            background-color:#b09063;
+            width:100%;
+            cursor:pointer;
+            padding:25px;
+            color:white;
+            margin-top:0px;
+            font:17px $fontMedium;
+
+            @media all and (max-width:$breakPoint1024){
+                width:425px;
+            }
+
+            @media all and (max-width:$breakPoint320)and(min-width: 767px){
+                width:300px;
+            }
+
+            @media all and (max-width:767px){
+                width:180px;
+            }
+        }
+    }
+}
